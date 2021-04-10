@@ -1,0 +1,50 @@
+.tour{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80vw;
+    margin:5vw ;
+    img{
+        width:80vw;
+        border-top-left-radius:10px ;
+        border-top-right-radius:10px ;
+    
+    }
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, .1),
+                -1px 0px 6px rgba(0, 0, 0, .1);
+    border-radius: 10px;
+   
+    p{
+        margin-left: 2vw;
+        margin-right: 2vw;
+        
+        
+    }
+    .readMore{
+        font-size: 16px;
+        border: none;
+        background-color: white !important;
+        color: royalblue;
+        outline: none; //to prevent the out lining when clicking
+    }
+    .top{
+        width: 100%;
+        display:flex ;
+        h3{
+            
+    
+            margin-left: 2vw;
+        }
+        p{
+            margin-left: 2vw;
+            margin-right: 2vw;
+           
+            align-self: center;
+            background-color: royalblue;
+            padding: .2em;
+            color:white ;
+            margin-left: auto;//read the article about flex box positioning
+            
+        }
+    }
+}

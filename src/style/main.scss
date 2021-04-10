@@ -1,0 +1,12 @@
+@import 'config';
+@import 'tours';
+
+
+.header{
+
+    display: flex;
+    justify-content: center;
+    .title{
+        border-bottom: 5px solid rgb(24, 160, 250);
+    }
+}
