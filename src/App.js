@@ -19,12 +19,31 @@ function App() {
    setViewText()
    ),[]);*/   // too many re-renders + how to sit it regardless it is not the right way
   
+  
+   const removeChoice = (ID)=>{
+   setToursList((i)=>i.filter((j)=>j.id!==ID))//it means if they are equal return false
+
+   /* const newTour = toursList.filter((j)=>{
+      if(j.id===ID){
+        return false
+      }else{
+        return j
+      }
+    })
+    setToursList(newTour)*/  // another way to do it 
+  }
+
+  const refresh = async()=> {
+    await fetchTours()
+  }
+
+
   console.log(toursList)
   return (
-    <div>
+    <div className='main'>
       <Header />
       {/* <p>{toursList}</p> */}
-      <Tours toursList={toursList} />
+      <Tours toursList={toursList} remove={removeChoice} refr={refresh}/>
     </div>
   );
 }

@@ -1,10 +1,11 @@
 import React from 'react'
 import Tour from './tour'
-const Tours = ({toursList}) => {
-    const tours = toursList.map((i)=><Tour tours={i}/>)//forgot and wrote it ()=><Tour tours={toursList}/>
+const Tours = ({toursList,remove,refr}) => {
+    const tours = toursList.map((i)=><Tour tours={i} remove={remove}/>)//forgot and wrote it ()=><Tour tours={toursList}/>
     return (
         <div>
-            {tours}
+            {!toursList.length?<button className="refresh" onClick={()=>refr()}>Refresh</button>:tours /*why it doesnt view ? its because you must use tourse.length and you were trying to use tours or one of the property of the array tourse */ }
+            
         </div>
     )
 }

@@ -47,4 +47,25 @@
             
         }
     }
+    .remove{
+        background-color: transparent;
+        border: rgb(255, 60, 0) 2px solid;
+        color: rgb(255, 60, 0);
+        font-weight: 750;
+        width: fit-content;//remmember to use this more 
+        padding: .5em;
+        border-radius: 5px;
+        margin: 0 auto 2vw auto
+    }
+    
+}
+.refresh{
+    background-color: transparent;
+    padding: .5em;
+    border: royalblue 2px solid;
+    color: royalblue;
+    font-size: 1.12em;
+    font-weight: 700;
+    border-radius: 5px;
+    outline: none;
 }

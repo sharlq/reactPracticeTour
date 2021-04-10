@@ -64,6 +64,30 @@ html, body {
   margin-left: auto;
 }
 
+.tour .remove {
+  background-color: transparent;
+  border: #ff3c00 2px solid;
+  color: #ff3c00;
+  font-weight: 750;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: .5em;
+  border-radius: 5px;
+  margin: 0 auto 2vw auto;
+}
+
+.refresh {
+  background-color: transparent;
+  padding: .5em;
+  border: royalblue 2px solid;
+  color: royalblue;
+  font-size: 1.12em;
+  font-weight: 700;
+  border-radius: 5px;
+  outline: none;
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -75,5 +99,18 @@ html, body {
 
 .header .title {
   border-bottom: 5px solid #18a0fa;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=main.css.map */
